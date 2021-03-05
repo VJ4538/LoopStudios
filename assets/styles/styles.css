@@ -1,0 +1,158 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-size:15px;
+
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+section{
+    max-width:1440px;
+    margin:0 auto;
+    padding:3% 5%;
+}
+
+
+/* container */
+.container-fluid{
+    padding:5% 5%;
+}
+
+/*section*/
+.colored-section{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Alata', sans-serif;
+
+}
+
+/*Color adn text*/
+.alata{
+    font-family:'Alata', sans-serif;
+}
+.text-secondary{
+    color:hsl(0, 0%, 55%);
+}
+.text-darkgray{
+    color:hsl(0, 0%, 41%);
+}
+.title-h1{
+    color:hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    font-size:2.5rem;
+    margin-bottom:0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+/*header*/
+#header{
+    background-image:url(/assets/images/desktop/image-hero.jpg);
+    background-size: 100%;
+}
+
+/*navbar*/
+.navbar-brand{
+    font-size:2.5rem;
+    cursor:default;
+}
+#header .navbar-dark .navbar-nav .nav-link {
+    color:white;
+    margin:0px 10px;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:white;
+}
+/*navbar end*/
+
+.title-box{
+    font-size:2.7rem;
+    text-transform: uppercase;
+    margin:3% 3% 3% 0%;
+    padding:3%;
+    border:2px solid hsl(0, 0%, 100%);
+}
+/*header end*/
+
+/*Content*/
+
+.img-container{
+    position: relative;
+    display:flex;
+}
+
+.img-container img{
+    position: relative;
+}
+
+.text-box{
+    background-color:hsl(0, 0%, 100%);
+    position: absolute;
+    z-index:2;
+    width:50%;
+    bottom: 0;
+    right:0;
+    text-align: left;
+    padding:5%;
+}
+
+
+.creation{
+    margin-top:10%;
+}
+.creation-title{
+    display:flex;
+}
+.seeall{
+    padding:0 5%;
+    text-transform: uppercase;
+}
+.box-section{
+    margin-top:5%;
+    display:flex;
+}
+.box{
+    position: relative;
+    margin-top:3%;
+}
+
+.box-text{
+    width:45%;
+    color:white;
+    position: absolute;
+    bottom:0;
+    left:10%;
+}
+
+/*Content end*/
+
+/*Footer*/
+#footer{
+    background-color:black;
+}
+#footer .navbar-dark .navbar-nav .nav-link {
+    margin-right:10px;
+    text-align: left;
+}
+.align{
+    padding-left:0.5rem;
+}
+.logo{
+    display:flex;
+}
+.s-icons{
+    padding-top:10px;
+}
+.s-icons .fab{
+    color:white;
+    font-size:2.0rem;
+    margin:auto 10px;
+
+}
+
+.rights{
+    display:inline-block;
+    margin:1rem;
+}
+
