@@ -24,7 +24,6 @@ section{
 .colored-section{
     color:hsl(0, 0%, 100%);
     font-family: 'Alata', sans-serif;
-
 }
 
 /*Color adn text*/
@@ -45,17 +44,21 @@ section{
 }
 .navbar-dark .navbar-nav .nav-link {
     color:white;
+    padding-left:0;
 }
 /*header*/
 #header{
     background-image:url(/assets/images/desktop/image-hero.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 /*navbar*/
 .navbar-brand{
     font-size:2.5rem;
     cursor:default;
+}
+.navbar-nav{
+    flex-direction: row;
 }
 #header .navbar-dark .navbar-nav .nav-link {
     color:white;
@@ -126,7 +129,11 @@ section{
 }
 
 /*Content end*/
-
+/*Mobile content*/
+#mobileContent{
+    display:none;
+}
+/*Mobile content end*/
 /*Footer*/
 #footer{
     background-color:black;
@@ -135,9 +142,7 @@ section{
     margin-right:10px;
     text-align: left;
 }
-.align{
-    padding-left:0.5rem;
-}
+
 .logo{
     display:flex;
 }
@@ -151,8 +156,98 @@ section{
 
 }
 
-.rights{
+.rights p{
     display:inline-block;
     margin:1rem;
 }
 
+
+/*Tablet size*/
+@media only screen and (max-width: 768px)and (min-width: 426px) {
+    /*Container*/
+    .container-fluid{
+        padding:3% 3%;
+    }
+    /*Header*/
+    /*Mobile content*/
+    #mobileContent{
+        display: none;
+    }
+    .title-h1{
+        font-size:2rem;
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .text-box{
+        order:-1;
+        position: relative;
+        width:100%;
+        text-align: center;
+    }
+
+    .creation{
+        margin-top:7%;
+    }
+
+    .s-icons .fab {
+        font-size:1.5rem;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 425px) {
+
+    /*Content section*/
+    #content{
+        display:none;
+    }
+    #mobileContent{
+        display:unset;
+    }
+
+    /*Header*/
+    #header{
+        background-image: url(/assets/images/mobile/image-hero.jpg);
+    }
+    .title-box{
+        text-align: center;
+    }
+    .navbar-nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    /*Content*/
+    .box-text{
+        width:20%;
+    }
+    .title-h1{
+        text-align: center;
+    }
+    /*Footer*/
+    .footer-section{
+        text-align:center !important;
+    }
+    .footer-nav ul{
+        flex-direction: column;
+        margin:0 auto;
+    }
+    .footer-nav ul li a{
+        text-align: center !important;
+        margin-right:0 !important;
+    }
+    .logo{
+        order:3;
+    }
+    .rights{
+        text-align:center !important;
+        order:4;
+    }
+    .s-icons{
+        margin:0 auto!important;
+    }
+    .s-icons .fab {
+        font-size:1.5rem;
+    }
+
+}
